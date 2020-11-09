@@ -10135,6 +10135,25 @@ a:focus {
   justify-content: center;
 }
 
+.border-left-dpp {
+  border-left: 0.25rem solid #1B9431 !important;
+}
+.border-left-kmt {
+  border-left: 0.25rem solid #000095 !important;
+}
+.border-left-pfp {
+  border-left: 0.25rem solid #FF6310 !important;
+}
+.border-left-newp {
+  border-left: 0.25rem solid #F9BE01 !important;
+}
+.border-left-state {
+  border-left: 0.25rem solid #A73f24 !important;
+}
+.border-left-tpp {
+  border-left: 0.25rem solid #28C8C8 !important;
+}
+
 .border-left-primary {
   border-left: 0.25rem solid #4e73df !important;
 }
