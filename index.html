@@ -293,8 +293,27 @@
                         
                     </div>
 
+                    <script>
+                        function LoadPIE() {
+
+                            setTimeout(function (){
+                                document.getElementById("collapseCardExample5").scrollIntoView({behavior: "smooth"});
+                            },100);
+
+                            setTimeout(function (){
+                                loadPie();
+                            }, 500);
+                        }
+
+                        function GoTo(id){
+                            setTimeout(function (){
+                                document.getElementById(id).scrollIntoView({behavior: "smooth"});
+                            },100);
+                        }
+                    </script>
+
                     <div class="card card-collapsable">
-                        <a class="card-header" href="#collapseCardExample5" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample"><i class="fas fa-palette"></i> 圖像顏色分佈佔比
+                        <a class="card-header" href="#collapseCardExample5" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample" onclick="LoadPIE();"><i class="fas fa-palette"></i> 圖像顏色分佈佔比
                             <div class="card-collapsable-arrow">
                             </div>
                         </a>
@@ -430,9 +449,19 @@
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                        
                      </div>
+                     <script>
+                        function LoadAREA() {
+                            setTimeout(function (){
+                                document.getElementById("collapseCardExample2").scrollIntoView({behavior: "smooth"});
+                            },100);
 
+                            setTimeout(function (){
+                                LoadArea_FBIG();
+                            }, 500);
+                        }
+                    </script>
                     <div class="card card-collapsable">
-                        <a class="card-header" href="#collapseCardExample2" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample"><i class="far fa-paper-plane"></i> 發文數
+                        <a class="card-header" href="#collapseCardExample2" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample" onclick="LoadAREA();"><i class="far fa-paper-plane"></i> 發文數
                             <div class="card-collapsable-arrow">
                             </div>
                         </a>
@@ -479,8 +508,21 @@
                         
                     </div>
 
+                    <script>
+                        function LoadBAR() {
+
+                            setTimeout(function (){
+                                document.getElementById("collapseCardExampleReaction").scrollIntoView({behavior: "smooth"});
+                            },100);
+
+                            setTimeout(function (){
+                                LoadBar_count();
+                            }, 500);
+                        }
+                    </script>
+
                     <div class="card card-collapsable">
-                        <a class="card-header" href="#collapseCardExampleReaction" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample"><i class="far fa-thumbs-up"></i> 互動數
+                        <a class="card-header" href="#collapseCardExampleReaction" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample" onclick="LoadBAR();"><i class="far fa-thumbs-up"></i> 互動數
                             <div class="card-collapsable-arrow">
                             </div>
                         </a>
@@ -528,7 +570,7 @@
                     </div>
 
                     <div class="card card-collapsable">
-                        <a class="card-header" href="#collapseCardExample3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample"><i class="fas fa-chart-pie"></i> 文宣佔比
+                        <a class="card-header" href="#collapseCardExample3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample" onClick="GoTo('collapseCardExample3');"><i class="fas fa-chart-pie"></i> 文宣佔比
                             <div class="card-collapsable-arrow">
                                 
                             </div>
@@ -676,7 +718,7 @@
                     </div>
 
                     <div class="card card-collapsable">
-                        <a class="card-header" href="#collapseCardExampleTag" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample"><i class="fas fa-search"></i> 偵測圖像人物之政黨
+                        <a class="card-header" href="#collapseCardExampleTag" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample" onClick="GoTo('collapseCardExampleTag');"><i class="fas fa-search"></i> 偵測圖像人物之政黨
                             <div class="card-collapsable-arrow">
                                 
                             </div>
@@ -1113,7 +1155,7 @@
 
                     <div class="card card-collapsable">
                         
-                        <a class="card-header" href="#collapseCardExampleAge" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample"><i class="fas fa-clipboard-list"></i> 人物年齡
+                        <a class="card-header" href="#collapseCardExampleAge" onClick="GoTo('collapseCardExampleAge');" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample"><i class="fas fa-clipboard-list"></i> 人物年齡
                             <div class="card-collapsable-arrow"></div>
                         </a>
                         <div class="collapse" id="collapseCardExampleAge">
@@ -1577,9 +1619,22 @@
                         <h1 class="h3 mb-0 text-gray-800"><i class="fas fa-user"></i> <strong>立委統計</strong></h1>
                     </div>
                     
+                    <script>
+                        function LoadA_per() {
+                            
+                            setTimeout(function (){
+                                document.getElementById("collapseCardExample6").scrollIntoView({behavior: "smooth"});
+                            },100);
+
+                            setTimeout(function (){
+                                LoadArea_Person();
+                            },500);
+                            
+                        }
+                    </script>
 
                     <div class="card card-collapsable">
-                        <a class="card-header" href="#collapseCardExample6" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample"><i class="fab fa-facebook"></i> 互動數與讚數
+                        <a class="card-header" href="#collapseCardExample6" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample" onclick="LoadA_per();"><i class="fab fa-facebook"></i> 互動數與讚數
                             <div class="card-collapsable-arrow">
                             </div>
                         </a>
@@ -1605,6 +1660,7 @@
                     <script> 
 
                         function imgReset(){
+                            GoTo("collapseCardExample7");
                             document.getElementById("image").src = "./image/all_puzzle.jpg";
                             document.getElementById("backImg").style.backgroundImage = "url('./image/all_puzzle.jpg')";
                         }
@@ -1710,7 +1766,7 @@
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
+                    <div class="copyright text-center my-auto" id="BOTT">
                         <span>Copyright &copy; Website 2020</span>
                     </div>
                 </div>

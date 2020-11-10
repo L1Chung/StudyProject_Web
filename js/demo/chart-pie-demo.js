@@ -2,16 +2,53 @@
 Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#858796';
 
+function loadPie(){
 // Pie Chart Example
-try {
+  try {
 
-  var ctx = document.getElementById("dpp");
+    var ctx = document.getElementById("dpp");
+    var myPieChart = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: ["Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent"],
+        datasets: [{
+          data: [9.54, 19.26, 8.14, 6.62, 3.53, 8.64, 17.63, 3.53, 0.1, 0.52, 2.06, 1.67, 18.77],
+          backgroundColor:['#FF0000','#FF8000','#FFFF00','#80FF00','#00FF00','#00FF80','#00FFFF','#0080FF','#0000FF','#7F00FF','#FF00FF','#FF007F','#808080'],
+          hoverBackgroundColor: [],
+          hoverBorderColor: "rgba(234, 236, 244, 1)",
+        }],
+      },
+      options: {
+        maintainAspectRatio: false,
+        tooltips: {
+          backgroundColor: "rgb(255,255,255)",
+          bodyFontColor: "#858796",
+          borderColor: '#dddfeb',
+          borderWidth: 1,
+          xPadding: 15,
+          yPadding: 15,
+          displayColors: false,
+          caretPadding: 10,
+        },
+        legend: {
+          display: false
+        },
+        cutoutPercentage: 80,
+      },
+    });
+    
+  } catch (error) {
+    
+  }
+
+  try {
+    var ctx = document.getElementById("kmt");
   var myPieChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
       labels: ["Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent"],
       datasets: [{
-        data: [9.54, 19.26, 8.14, 6.62, 3.53, 8.64, 17.63, 3.53, 0.1, 0.52, 2.06, 1.67, 18.77],
+        data: [10.54, 12.18, 3.28, 9.71, 1.5, 5.87, 11.77, 17.37, 1.32, 1.36, 1.5, 1.46, 22.12],
         backgroundColor:['#FF0000','#FF8000','#FFFF00','#80FF00','#00FF00','#00FF80','#00FFFF','#0080FF','#0000FF','#7F00FF','#FF00FF','#FF007F','#808080'],
         hoverBackgroundColor: [],
         hoverBorderColor: "rgba(234, 236, 244, 1)",
@@ -35,191 +72,157 @@ try {
       cutoutPercentage: 80,
     },
   });
-  
-} catch (error) {
-  
+  } catch (error) {
+    
+  }
+
+
+
+  try {
+    var ctx = document.getElementById("power");
+  var myPieChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ["Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent"],
+      datasets: [{
+        data: [11.07, 43.09, 5.43, 1.82, 0.29, 1.42, 7.5, 5.83, 0.33, 1.67, 2.98, 2.25, 16.32],
+        backgroundColor:['#FF0000','#FF8000','#FFFF00','#80FF00','#00FF00','#00FF80','#00FFFF','#0080FF','#0000FF','#7F00FF','#FF00FF','#FF007F','#808080'],
+        hoverBackgroundColor: [],
+        hoverBorderColor: "rgba(234, 236, 244, 1)",
+      }],
+    },
+    options: {
+      maintainAspectRatio: false,
+      tooltips: {
+        backgroundColor: "rgb(255,255,255)",
+        bodyFontColor: "#858796",
+        borderColor: '#dddfeb',
+        borderWidth: 1,
+        xPadding: 15,
+        yPadding: 15,
+        displayColors: false,
+        caretPadding: 10,
+      },
+      legend: {
+        display: false
+      },
+      cutoutPercentage: 80,
+    },
+  });
+  } catch (error) {
+    
+  }
+
+
+  try {
+    ////
+  var ctx = document.getElementById("pfp");
+  var myPieChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ["Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent"],
+      datasets: [{
+        data: [12.14, 45.17, 3.86, 0.98, 0.0, 1.98, 7.45, 4.36, 1.73, 3.33, 2.35, 2.1, 14.51],
+        backgroundColor:['#FF0000','#FF8000','#FFFF00','#80FF00','#00FF00','#00FF80','#00FFFF','#0080FF','#0000FF','#7F00FF','#FF00FF','#FF007F','#808080'],
+        hoverBackgroundColor: [],
+        hoverBorderColor: "rgba(234, 236, 244, 1)",
+      }],
+    },
+    options: {
+      maintainAspectRatio: false,
+      tooltips: {
+        backgroundColor: "rgb(255,255,255)",
+        bodyFontColor: "#858796",
+        borderColor: '#dddfeb',
+        borderWidth: 1,
+        xPadding: 15,
+        yPadding: 15,
+        displayColors: false,
+        caretPadding: 10,
+      },
+      legend: {
+        display: false
+      },
+      cutoutPercentage: 80,
+    },
+  });
+  } catch (error) {
+    
+  }
+
+  try {
+    var ctx = document.getElementById("state");
+  var myPieChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ["Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent"],
+      datasets: [{
+        data: [16.42, 32.05, 4.4, 1.11, 0.36, 0.65, 6.96, 2.92, 0.73, 1.36, 2.53, 2.3, 28.21],
+        backgroundColor:['#FF0000','#FF8000','#FFFF00','#80FF00','#00FF00','#00FF80','#00FFFF','#0080FF','#0000FF','#7F00FF','#FF00FF','#FF007F','#808080'],
+        hoverBackgroundColor: [],
+        hoverBorderColor: "rgba(234, 236, 244, 1)",
+      }],
+    },
+    options: {
+      maintainAspectRatio: false,
+      tooltips: {
+        backgroundColor: "rgb(255,255,255)",
+        bodyFontColor: "#858796",
+        borderColor: '#dddfeb',
+        borderWidth: 1,
+        xPadding: 15,
+        yPadding: 15,
+        displayColors: false,
+        caretPadding: 10,
+      },
+      legend: {
+        display: false
+      },
+      cutoutPercentage: 80,
+    },
+  });
+  } catch (error) {
+    
+  }
+
+
+  try {
+    ////
+  var ctx = document.getElementById("tpp");
+  var myPieChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ["Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent"],
+      datasets: [{
+        data: [3.54, 6.39, 14.92, 0.15, 0.39, 3.16, 30.56, 11.5, 0.46, 0.15, 1.77, 0.23, 26.77],
+        backgroundColor:['#FF0000','#FF8000','#FFFF00','#80FF00','#00FF00','#00FF80','#00FFFF','#0080FF','#0000FF','#7F00FF','#FF00FF','#FF007F','#808080'],
+        hoverBackgroundColor: [],
+        hoverBorderColor: "rgba(234, 236, 244, 1)",
+      }],
+    },
+    options: {
+      maintainAspectRatio: false,
+      tooltips: {
+        backgroundColor: "rgb(255,255,255)",
+        bodyFontColor: "#858796",
+        borderColor: '#dddfeb',
+        borderWidth: 1,
+        xPadding: 15,
+        yPadding: 15,
+        displayColors: false,
+        caretPadding: 10,
+      },
+      legend: {
+        display: false
+      },
+      cutoutPercentage: 80,
+    },
+  });
+  } catch (error) {
+    
+  }
 }
 
-try {
-  var ctx = document.getElementById("kmt");
-var myPieChart = new Chart(ctx, {
-  type: 'doughnut',
-  data: {
-    labels: ["Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent"],
-    datasets: [{
-      data: [10.54, 12.18, 3.28, 9.71, 1.5, 5.87, 11.77, 17.37, 1.32, 1.36, 1.5, 1.46, 22.12],
-      backgroundColor:['#FF0000','#FF8000','#FFFF00','#80FF00','#00FF00','#00FF80','#00FFFF','#0080FF','#0000FF','#7F00FF','#FF00FF','#FF007F','#808080'],
-      hoverBackgroundColor: [],
-      hoverBorderColor: "rgba(234, 236, 244, 1)",
-    }],
-  },
-  options: {
-    maintainAspectRatio: false,
-    tooltips: {
-      backgroundColor: "rgb(255,255,255)",
-      bodyFontColor: "#858796",
-      borderColor: '#dddfeb',
-      borderWidth: 1,
-      xPadding: 15,
-      yPadding: 15,
-      displayColors: false,
-      caretPadding: 10,
-    },
-    legend: {
-      display: false
-    },
-    cutoutPercentage: 80,
-  },
-});
-} catch (error) {
-  
-}
-
-
-
-try {
-  var ctx = document.getElementById("power");
-var myPieChart = new Chart(ctx, {
-  type: 'doughnut',
-  data: {
-    labels: ["Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent"],
-    datasets: [{
-      data: [11.07, 43.09, 5.43, 1.82, 0.29, 1.42, 7.5, 5.83, 0.33, 1.67, 2.98, 2.25, 16.32],
-      backgroundColor:['#FF0000','#FF8000','#FFFF00','#80FF00','#00FF00','#00FF80','#00FFFF','#0080FF','#0000FF','#7F00FF','#FF00FF','#FF007F','#808080'],
-      hoverBackgroundColor: [],
-      hoverBorderColor: "rgba(234, 236, 244, 1)",
-    }],
-  },
-  options: {
-    maintainAspectRatio: false,
-    tooltips: {
-      backgroundColor: "rgb(255,255,255)",
-      bodyFontColor: "#858796",
-      borderColor: '#dddfeb',
-      borderWidth: 1,
-      xPadding: 15,
-      yPadding: 15,
-      displayColors: false,
-      caretPadding: 10,
-    },
-    legend: {
-      display: false
-    },
-    cutoutPercentage: 80,
-  },
-});
-} catch (error) {
-  
-}
-
-
-try {
-  ////
-var ctx = document.getElementById("pfp");
-var myPieChart = new Chart(ctx, {
-  type: 'doughnut',
-  data: {
-    labels: ["Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent"],
-    datasets: [{
-      data: [12.14, 45.17, 3.86, 0.98, 0.0, 1.98, 7.45, 4.36, 1.73, 3.33, 2.35, 2.1, 14.51],
-      backgroundColor:['#FF0000','#FF8000','#FFFF00','#80FF00','#00FF00','#00FF80','#00FFFF','#0080FF','#0000FF','#7F00FF','#FF00FF','#FF007F','#808080'],
-      hoverBackgroundColor: [],
-      hoverBorderColor: "rgba(234, 236, 244, 1)",
-    }],
-  },
-  options: {
-    maintainAspectRatio: false,
-    tooltips: {
-      backgroundColor: "rgb(255,255,255)",
-      bodyFontColor: "#858796",
-      borderColor: '#dddfeb',
-      borderWidth: 1,
-      xPadding: 15,
-      yPadding: 15,
-      displayColors: false,
-      caretPadding: 10,
-    },
-    legend: {
-      display: false
-    },
-    cutoutPercentage: 80,
-  },
-});
-} catch (error) {
-  
-}
-
-try {
-  var ctx = document.getElementById("state");
-var myPieChart = new Chart(ctx, {
-  type: 'doughnut',
-  data: {
-    labels: ["Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent"],
-    datasets: [{
-      data: [16.42, 32.05, 4.4, 1.11, 0.36, 0.65, 6.96, 2.92, 0.73, 1.36, 2.53, 2.3, 28.21],
-      backgroundColor:['#FF0000','#FF8000','#FFFF00','#80FF00','#00FF00','#00FF80','#00FFFF','#0080FF','#0000FF','#7F00FF','#FF00FF','#FF007F','#808080'],
-      hoverBackgroundColor: [],
-      hoverBorderColor: "rgba(234, 236, 244, 1)",
-    }],
-  },
-  options: {
-    maintainAspectRatio: false,
-    tooltips: {
-      backgroundColor: "rgb(255,255,255)",
-      bodyFontColor: "#858796",
-      borderColor: '#dddfeb',
-      borderWidth: 1,
-      xPadding: 15,
-      yPadding: 15,
-      displayColors: false,
-      caretPadding: 10,
-    },
-    legend: {
-      display: false
-    },
-    cutoutPercentage: 80,
-  },
-});
-} catch (error) {
-  
-}
-
-
-try {
-  ////
-var ctx = document.getElementById("tpp");
-var myPieChart = new Chart(ctx, {
-  type: 'doughnut',
-  data: {
-    labels: ["Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent"],
-    datasets: [{
-      data: [3.54, 6.39, 14.92, 0.15, 0.39, 3.16, 30.56, 11.5, 0.46, 0.15, 1.77, 0.23, 26.77],
-      backgroundColor:['#FF0000','#FF8000','#FFFF00','#80FF00','#00FF00','#00FF80','#00FFFF','#0080FF','#0000FF','#7F00FF','#FF00FF','#FF007F','#808080'],
-      hoverBackgroundColor: [],
-      hoverBorderColor: "rgba(234, 236, 244, 1)",
-    }],
-  },
-  options: {
-    maintainAspectRatio: false,
-    tooltips: {
-      backgroundColor: "rgb(255,255,255)",
-      bodyFontColor: "#858796",
-      borderColor: '#dddfeb',
-      borderWidth: 1,
-      xPadding: 15,
-      yPadding: 15,
-      displayColors: false,
-      caretPadding: 10,
-    },
-    legend: {
-      display: false
-    },
-    cutoutPercentage: 80,
-  },
-});
-} catch (error) {
-  
-}
 
 
 try {
