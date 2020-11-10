@@ -10604,7 +10604,7 @@ a:focus {
   margin-right: 1rem;
   margin-bottom: 1rem;
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .sidebar .sidebar-card .sidebar-card-illustration {
