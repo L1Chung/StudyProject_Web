@@ -27,6 +27,8 @@ function number_format(number, decimals, dec_point, thousands_sep) {
   return s.join(dec);
 }
 
+
+
 var ctx = document.getElementById("myAreaChart-FB");
 var dataDPP_fb = {
   label: "民進黨",
@@ -393,7 +395,7 @@ var myLineChart = new Chart(ctx, {
     
     labels: ['陳柏惟\n台灣基進', '許淑華\n中國國民黨', '高嘉瑜\n民主進步黨', '王定宇\n民主進步黨', '蔣萬安\n中國國民黨', '洪孟楷\n中國國民黨', '趙天麟\n民主進步黨', '江啟臣\n中國國民黨', '陳亭妃\n民主進步黨', '賴士葆\n中國國民黨'],
     datasets: [{
-      label: "數量",
+      label: "互動數",
       backgroundColor: [
         'rgba(167, 63, 36, 1)',
         'rgba(0, 0, 149, 1)',
@@ -418,7 +420,36 @@ var myLineChart = new Chart(ctx, {
         'rgba(27, 148, 49, 1)',
         'rgba(0, 0, 149, 1)',
       ],
+      order:1,
       data: [12046.36, 7225.83, 5783.474, 3144.153, 2952.519, 2951.228, 2792.274, 2733.31, 2594.587, 2385.195]
+    },{
+      label: "讚數",
+      backgroundColor: [
+        'rgba(167, 63, 36, 0.5)',
+        'rgba(0, 0, 149, 0.5)',
+        'rgba(27, 148, 49, 0.5)',
+        'rgba(27, 148, 49, 0.5)',
+        'rgba(0, 0, 149, 0.5)',
+        'rgba(0, 0, 149, 0.5)',
+        'rgba(27, 148, 49, 0.5)',
+        'rgba(0, 0, 149, 0.5)',
+        'rgba(27, 148, 49, 0.5)',
+        'rgba(0, 0, 149, 0.5)',
+      ],
+      borderColor: [
+        'rgba(167, 63, 36, 1)',
+        'rgba(0, 0, 149, 1)',
+        'rgba(27, 148, 49, 1)',
+        'rgba(27, 148, 49, 1)',
+        'rgba(0, 0, 149, 1)',
+        'rgba(0, 0, 149, 1)',
+        'rgba(27, 148, 49, 1)',
+        'rgba(0, 0, 149, 1)',
+        'rgba(27, 148, 49, 1)',
+        'rgba(0, 0, 149, 1)',
+      ],
+      order:2,
+      data: [10856.738, 6987.626, 5321.67, 2816.998, 2855.832, 2830.725, 2713.253, 2640.301, 2497.234, 2152.142]
     }],
   },
   options: {
@@ -482,40 +513,52 @@ var myLineChart = new Chart(ctx, {
   }
 });
 
-
-var ctx = document.getElementById("myAreaChart2");
+var ctx = document.getElementById("Count-fb");
 var myLineChart = new Chart(ctx, {
   type: 'bar',
   data: {
     
-    labels: ['陳柏惟\n台灣基進', '許淑華\n中國國民黨', '高嘉瑜\n民主進步黨', '王定宇\n民主進步黨', '蔣萬安\n中國國民黨', '洪孟楷\n中國國民黨', '趙天麟\n民主進步黨', '江啟臣\n中國國民黨', '陳亭妃\n民主進步黨', '賴士葆\n中國國民黨'],
+    labels: ['民進黨','國民黨','親民黨','時代力量','台灣基進黨','民眾黨'],
     datasets: [{
-      label: "數量",
+      label: "互動數",
       backgroundColor: [
-        'rgba(167, 63, 36, 1)',
-        'rgba(0, 0, 149, 1)',
-        'rgba(27, 148, 49, 1)',
-        'rgba(27, 148, 49, 1)',
-        'rgba(0, 0, 149, 1)',
-        'rgba(0, 0, 149, 1)',
-        'rgba(27, 148, 49, 1)',
-        'rgba(0, 0, 149, 1)',
-        'rgba(27, 148, 49, 1)',
-        'rgba(0, 0, 149, 1)',
+        "rgba(27, 148, 49, 1)",
+        "rgba(0, 0, 149, 1)",
+        "rgba(255, 99, 16, 1)",
+        "rgba(249, 190, 1, 1)",
+        "rgba(167, 63, 36, 1)",
+        "rgba(40, 200, 200, 1)"
       ],
       borderColor: [
-        'rgba(167, 63, 36, 1)',
-        'rgba(0, 0, 149, 1)',
-        'rgba(27, 148, 49, 1)',
-        'rgba(27, 148, 49, 1)',
-        'rgba(0, 0, 149, 1)',
-        'rgba(0, 0, 149, 1)',
-        'rgba(27, 148, 49, 1)',
-        'rgba(0, 0, 149, 1)',
-        'rgba(27, 148, 49, 1)',
-        'rgba(0, 0, 149, 1)',
+        "rgba(27, 148, 49, 1)",
+        "rgba(0, 0, 149, 1)",
+        "rgba(255, 99, 16, 1)",
+        "rgba(249, 190, 1, 1)",
+        "rgba(167, 63, 36, 1)",
+        "rgba(40, 200, 200, 1)"
       ],
-      data: [10856.738, 6987.626, 5321.67, 2816.998, 2855.832, 2830.725, 2713.253, 2640.301, 2497.234, 2152.142]
+      data: [2170419, 2804108, 251030, 1045953, 6967615, 1959838],
+      order: 1
+    },{
+      label: "讚數",
+      backgroundColor: [
+        "rgba(27, 148, 49, 0.5)",
+        "rgba(0, 0, 149, 0.5)",
+        "rgba(255, 99, 16, 0.5)",
+        "rgba(249, 190, 1, 0.5)",
+        "rgba(167, 63, 36, 0.5)",
+        "rgba(40, 200, 200, 0.5)"
+      ],
+      borderColor: [
+        "rgba(27, 148, 49, 1)",
+        "rgba(0, 0, 149, 1)",
+        "rgba(255, 99, 16, 1)",
+        "rgba(249, 190, 1, 1)",
+        "rgba(167, 63, 36, 1)",
+        "rgba(40, 200, 200, 1)"
+      ],
+      data: [2085706, 2484684, 237646, 950783, 6091358, 1869997],
+      order: 2
     }],
   },
   options: {
@@ -544,7 +587,7 @@ var myLineChart = new Chart(ctx, {
           padding: 10,
           // Include a dollar sign in the ticks
           callback: function(value, index, values) {
-            return number_format(value) + 'K';
+            return number_format(value);
           }
         },
         gridLines: {
@@ -572,7 +615,96 @@ var myLineChart = new Chart(ctx, {
       callbacks: {
         label: function(tooltipItem, chart) {
           var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-          return datasetLabel + ':' + number_format(tooltipItem.yLabel)+'K';
+          return datasetLabel + ':' + number_format(tooltipItem.yLabel);
+        }
+      }
+    }
+  }
+});
+myLineChart.Chart
+
+var ctx = document.getElementById("Count-ig");
+var myLineChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    
+    labels: ['民進黨','國民黨','親民黨','時代力量','台灣基進黨','民眾黨'],
+    datasets: [{
+      label: "數量",
+      backgroundColor: [
+        "rgba(27, 148, 49, 1)",
+        "rgba(0, 0, 149, 1)",
+        "rgba(255, 99, 16, 1)",
+        "rgba(249, 190, 1, 1)",
+        "rgba(167, 63, 36, 1)",
+        "rgba(40, 200, 200, 1)"
+      ],
+      borderColor: [
+        "rgba(27, 148, 49, 1)",
+        "rgba(0, 0, 149, 1)",
+        "rgba(255, 99, 16, 1)",
+        "rgba(249, 190, 1, 1)",
+        "rgba(167, 63, 36, 1)",
+        "rgba(40, 200, 200, 1)"
+      ],
+      data: [401583, 1564, 2969, 134736, 108820, 53]
+    }],
+  },
+  options: {
+    maintainAspectRatio: false,
+    layout: {
+      padding: {
+        left: 10,
+        right: 25,
+        top: 25,
+        bottom: 0
+      }
+    },
+    scales: {
+      xAxes: [{
+        gridLines: {
+          display: false,
+          drawBorder: false
+        },
+        ticks: {
+          maxTicksLimit: 10
+        }
+      }],
+      yAxes: [{
+        ticks: {
+          maxTicksLimit: 8,
+          padding: 10,
+          // Include a dollar sign in the ticks
+          callback: function(value, index, values) {
+            return number_format(value);
+          }
+        },
+        gridLines: {
+          drawBorder: false,
+        }
+      }],
+    },
+    legend: {
+      display: false
+    },
+    tooltips: {
+      backgroundColor: "rgb(255,255,255)",
+      bodyFontColor: "#858796",
+      titleMarginBottom: 10,
+      titleFontColor: '#6e707e',
+      titleFontSize: 14,
+      borderColor: '#dddfeb',
+      borderWidth: 1,
+      xPadding: 15,
+      yPadding: 15,
+      displayColors: false,
+      intersect: false,
+      mode: 'index',
+      caretPadding: 10,
+      callbacks: {
+        label: function(tooltipItem, chart) {
+          var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
+          return datasetLabel + ':' + number_format(tooltipItem.yLabel);
         }
       }
     }
