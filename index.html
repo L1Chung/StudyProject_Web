@@ -1658,11 +1658,17 @@
                     </div>
 
                     <script> 
+                    
+                        function reload(){
+                            var container = document.getElementById("imgReload");
+                            var content = container.innerHTML;
+                            container.innerHTML= content; 
+                        }
 
                         function imgReset(){
                             GoTo("collapseCardExample7");
                             document.getElementById("image").src = "./image/all_puzzle.jpg";
-                            document.getElementById("backImg").style.backgroundImage = "url('./image/all_puzzle.jpg')";
+                            document.getElementById("backImg").style = "background-image: url('./image/all_puzzle.jpg'); background-size: cover;";
                         }
 
                         function changeImage(number)
@@ -1670,42 +1676,45 @@
                         var img = document.getElementById("image");
                         switch(number){
                             case 1:
-                                document.getElementById("backImg").style.backgroundImage = "url('"+img.src+"')";
+                                document.getElementById("backImg").style = "background-image: url('"+img.src+"'); background-size: cover;";
                                 img.src="./image/puzzle_dpp.jpg";
+                                reload();
                                 break;
                             case 2:
-                                document.getElementById("backImg").style.backgroundImage = "url('"+img.src+"')";
+                                document.getElementById("backImg").style = "background-image: url('"+img.src+"'); background-size: cover;";
                                 img.src="./image/puzzle_kmt.jpg";
+                                reload();
                                 break;
                             case 3:
-                                document.getElementById("backImg").style.backgroundImage = "url('"+img.src+"')";
+                                document.getElementById("backImg").style = "background-image: url('"+img.src+"'); background-size: cover;";
                                 img.src="./image/puzzle_newp.jpg";
+                                reload();
                                 break;
                             case 4:
-                                document.getElementById("backImg").style.backgroundImage = "url('"+img.src+"')";
+                                document.getElementById("backImg").style = "background-image: url('"+img.src+"'); background-size: cover;";
                                 img.src="./image/puzzle_stat.jpg";
+                                reload();
                                 break;
                             case 5:
-                                document.getElementById("backImg").style.backgroundImage = "url('"+img.src+"')";
+                                document.getElementById("backImg").style = "background-image: url('"+img.src+"'); background-size: cover;";
                                 img.src="./image/puzzle_tpp.jpg";
+                                reload();
                                 break;
                             case 6:
-                                document.getElementById("backImg").style.backgroundImage = "url('"+img.src+"')";
+                                document.getElementById("backImg").style = "background-image: url('"+img.src+"'); background-size: cover;";
                                 img.src="./image/puzzle_none.jpg";
+                                reload();
                                 break;
                             default:
-                                document.getElementById("backImg").style.backgroundImage = "url('"+img.src+"')";
+                                document.getElementById("backImg").style = "background-image: url('"+img.src+"'); background-size: cover;";
                                 img.src="./image/all_puzzle.jpg";
+                                reload();
                                 break;
-                        }
+                            }
                         return false;
                         }
 
-                        function reload(){
-                            var container = document.getElementById("imgReload");
-                            var content = container.innerHTML;
-                            container.innerHTML= content; 
-                        }
+                        
                         
                     </script>
 
@@ -1719,28 +1728,28 @@
                                 <div class="row">
             
                                     <div class="col-xl-2">
-                                        <a class="btn btn-success " onclick="changeImage();" href="javascript: reload()">全部</a>
+                                        <a class="btn btn-success " onclick="changeImage();">全部</a>
                                     </div>
                                     <div class="col-xl-2">
-                                        <a class="btn bg-dpp" onclick="changeImage(1);"  href="javascript: reload()"><span style="color:white;">民進黨</span></a>
+                                        <a class="btn bg-dpp" onclick="changeImage(1);" ><span style="color:white;">民進黨</span></a>
                                     </div>
                                     <div class="col-xl-2">
-                                        <a class="btn bg-kmt" onclick="changeImage(2);" href="javascript: reload()"><span style="color:white;">國民黨</span></a>
+                                        <a class="btn bg-kmt" onclick="changeImage(2);"><span style="color:white;">國民黨</span></a>
                                     </div>
                                     <div class="col-xl-2">
-                                        <a class="btn bg-state" onclick="changeImage(4);" href="javascript: reload()"><span style="color:white;">台灣基進</span></a>
+                                        <a class="btn bg-state" onclick="changeImage(4);"><span style="color:white;">台灣基進</span></a>
                                     </div>
                                     <div class="col-xl-2">
-                                        <a class="btn bg-tpp" onclick="changeImage(5);" href="javascript: reload()"><span style="color:white;">民眾黨</span></a>
+                                        <a class="btn bg-tpp" onclick="changeImage(5);"><span style="color:white;">民眾黨</span></a>
                                     </div>
                                     <div class="col-xl-2">
-                                        <a class="btn bg-secondary" onclick="changeImage(6);" href="javascript: reload()"><span style="color:white;">無黨籍</span></a>
+                                        <a class="btn bg-secondary" onclick="changeImage(6);"><span style="color:white;">無黨籍</span></a>
                                     </div>
                                 </div>
                                 <hr>
 
                                 <div class="row" id="imgReload" >
-                                    <div id= "backImg" style="background-image: url(''); background-size: cover;">
+                                    <div id= "backImg" >
                                         <img id="image" src="./image/all_puzzle.jpg" class="img-fluid d-block mx-auto fade-in" >
                                     </div>
                                 </div>
