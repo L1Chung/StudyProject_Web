@@ -14,6 +14,7 @@ preload([
     './image/puzzle_kmt.jpg',
     './image/puzzle_newp.jpg',
     './image/puzzle_none.jpg',
+    './image/puzzle_stat.jpg',
     './image/puzzle_tpp.jpg'
 ]);
         
