@@ -1668,7 +1668,7 @@
                         function imgReset(){
                             GoTo("collapseCardExample7");
                             document.getElementById("image").src = "./image/all_puzzle.jpg";
-                            document.getElementById("backImg").style = "background-image: url('./image/all_puzzle.jpg'); background-size: cover;";
+                            document.getElementById("imgReload").style = "background-image: url('./image/all_puzzle.jpg'); background-size: cover;";
                         }
 
                         function changeImage(number)
@@ -1676,37 +1676,37 @@
                         var img = document.getElementById("image");
                         switch(number){
                             case 1:
-                                document.getElementById("backImg").style = "background-image: url('"+img.src+"'); background-size: cover;";
+                                document.getElementById("imgReload").style = "background-image: url('"+img.src+"'); background-size: cover;";
                                 img.src="./image/puzzle_dpp.jpg";
                                 reload();
                                 break;
                             case 2:
-                                document.getElementById("backImg").style = "background-image: url('"+img.src+"'); background-size: cover;";
+                                document.getElementById("imgReload").style = "background-image: url('"+img.src+"'); background-size: cover;";
                                 img.src="./image/puzzle_kmt.jpg";
                                 reload();
                                 break;
                             case 3:
-                                document.getElementById("backImg").style = "background-image: url('"+img.src+"'); background-size: cover;";
+                                document.getElementById("imgReload").style = "background-image: url('"+img.src+"'); background-size: cover;";
                                 img.src="./image/puzzle_newp.jpg";
                                 reload();
                                 break;
                             case 4:
-                                document.getElementById("backImg").style = "background-image: url('"+img.src+"'); background-size: cover;";
+                                document.getElementById("imgReload").style = "background-image: url('"+img.src+"'); background-size: cover;";
                                 img.src="./image/puzzle_stat.jpg";
                                 reload();
                                 break;
                             case 5:
-                                document.getElementById("backImg").style = "background-image: url('"+img.src+"'); background-size: cover;";
+                                document.getElementById("imgReload").style = "background-image: url('"+img.src+"'); background-size: cover;";
                                 img.src="./image/puzzle_tpp.jpg";
                                 reload();
                                 break;
                             case 6:
-                                document.getElementById("backImg").style = "background-image: url('"+img.src+"'); background-size: cover;";
+                                document.getElementById("imgReload").style = "background-image: url('"+img.src+"'); background-size: cover;";
                                 img.src="./image/puzzle_none.jpg";
                                 reload();
                                 break;
                             default:
-                                document.getElementById("backImg").style = "background-image: url('"+img.src+"'); background-size: cover;";
+                                document.getElementById("imgReload").style = "background-image: url('"+img.src+"'); background-size: cover;";
                                 img.src="./image/all_puzzle.jpg";
                                 reload();
                                 break;
@@ -1749,9 +1749,7 @@
                                 <hr>
 
                                 <div class="row" id="imgReload" >
-                                    <div id= "backImg" >
-                                        <img id="image" src="./image/all_puzzle.jpg" class="img-fluid d-block mx-auto fade-in" >
-                                    </div>
+                                    <img id="image" src="./image/all_puzzle.jpg" class="img-fluid d-block mx-auto fade-in" >
                                 </div>
                                 
                                 
