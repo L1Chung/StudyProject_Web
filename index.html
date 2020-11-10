@@ -31,7 +31,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center">
                 
                 <div class="sidebar-brand-text mx-3">選單</div>
             </a>
@@ -125,7 +125,7 @@
                     </button>
 
                     <!-- Topbar Search -->
-                    <h1 class="h3 mb-0 text-gray-800"><i class="fas fa-compass fa-spin " style="color: #ff6b6b;"></i> 台灣主要政黨社群圖像資料探勘</h1>
+                    <h1 class="h3 mb-0 text-gray-800"><img src="./image/fcu_logo.jpg" weight="50px" height="50px"> 台灣主要政黨社群圖像資料探勘</h1>
 
                     
 
@@ -149,8 +149,8 @@
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                臉書互動數 NO.1</div>
+                                            <div class="text-s font-weight-bold text-primary text-uppercase mb-1">
+                                                臉書互動數 No.1</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">台灣基進黨</div>
                                         </div>
                                         <div class="col-auto">
@@ -167,8 +167,8 @@
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                                Instagram讚數 NO.1</div>
+                                            <div class="text-s font-weight-bold text-danger text-uppercase mb-1">
+                                                Instagram讚數 No.1</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">民進黨</div>
                                         </div>
                                         <div class="col-auto">
@@ -185,12 +185,12 @@
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                                被怒最多的政黨</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">台灣基進黨</div>
+                                            <div class="text-s font-weight-bold text-info text-uppercase mb-1">
+                                                立委互動數 No.1</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">陳柏惟-台灣基進黨</div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-angry fa-2x text-gray-300"></i>
+                                            <i class="fas fa-handshake fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -199,11 +199,11 @@
 
                         <!-- Earnings (Monthly) Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
+                            <div class="card border-left-pfp shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1" >使用顏色最單一政黨
+                                            <div class="text-s font-weight-bold text-uppercase mb-1" style="color: #FF6310;">使用顏色最單一政黨
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
@@ -211,7 +211,7 @@
                                                 </div>
                                                 <div class="col">
                                                     <div class="progress progress-sm mr-2">
-                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                        <div class="progress-bar bg-pfp" role="progressbar"
                                                             style="width: 45%" aria-valuenow="45" aria-valuemin="0"
                                                             aria-valuemax="100"></div>
                                                     </div>
@@ -228,15 +228,207 @@
 
                         
                     </div>
-                    <!-- Page Heading -->
+
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800"><i class="far fa-chart-bar" style="color: #20c997;"></i> <strong>政黨統計</strong></h1>
+                    </div>
+
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800"><i class="fas fa-info-circle"></i> <strong>各黨代表顏色</strong></h1>
                         
                     </div>
 
-                    
+                    <div class='row'>
+                        <div class="col-md-2 mb-2">
+                            <div class="card bg-dpp text-white shadow">
+                                <div class="card-body">
+                                    <h4 class="font-weight-bold">民進黨</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 mb-2">
+                            <div class="card bg-kmt text-white shadow">
+                                <div class="card-body">
+                                    <h4 class="font-weight-bold">國民黨</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 mb-2">
+                            <div class="card bg-pfp text-white shadow">
+                                <div class="card-body">
+                                    <h4 class="font-weight-bold">親民黨</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 mb-2">
+                            <div class="card bg-power text-white shadow">
+                                <div class="card-body">
+                                    <h4 class="font-weight-bold">時代力量</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 mb-2">
+                            <div class="card bg-state text-white shadow">
+                                <div class="card-body">
+                                    <h4 class="font-weight-bold">台灣基進黨</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 mb-2">
+                            <div class="card bg-tpp text-white shadow">
+                                <div class="card-body">
+                                    <h4 class="font-weight-bold">民眾黨</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                       <br>
+                    </div>
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800"><i class="far fa-chart-bar"></i> <strong>政黨統計</strong></h1>
+                        
+                    </div>
+
+                    <div class="card card-collapsable">
+                        <a class="card-header" href="#collapseCardExample5" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample"><i class="fas fa-palette"></i> 圖像顏色分佈佔比
+                            <div class="card-collapsable-arrow">
+                            </div>
+                        </a>
+                        <div class="collapse" id="collapseCardExample5">
+                            <div class="card-body">
+                                <div class="row">
+
+                                    <!-- Pie Chart -->
+                                    <div class="col-xl-4 col-lg-5">
+                                        <div class="card shadow mb-4">
+                                            <!-- Card Header - Dropdown -->
+                                            <div
+                                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                                <img src="https://upload.wikimedia.org/wikipedia/zh/c/c1/Emblem_of_Democratic_Progressive_Party_%28new%29.svg" width="50px" height="50px">
+                                                <h6 class="m-0 font-weight-bold text-primary">民進黨</h6>
+                                                
+                                            </div>
+                                            <!-- Card Body -->
+                                            <div class="card-body">
+                                                
+                                                <div class="chart-pie pt-4 pb-2">
+                                                    <canvas id="dpp"></canvas>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-5">
+                                        <div class="card shadow mb-4">
+                                            <!-- Card Header - Dropdown -->
+                                            <div
+                                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Emblem_of_the_Kuomintang.svg" width="50px" height="50px">
+                                                <h6 class="m-0 font-weight-bold text-primary">國民黨</h6>
+                                                
+                                            </div>
+                                            <!-- Card Body -->
+                                            <div class="card-body">
+                                                
+                                                <div class="chart-pie pt-4 pb-2">
+                                                    <canvas id="kmt"></canvas>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-5">
+                                        <div class="card shadow mb-4">
+                                            <!-- Card Header - Dropdown -->
+                                            <div
+                                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                                <img src="http://images.uncyc.org/zh-tw/8/8f/Semi_NewPowerParty_logo_01.gif" width="50px" height="50px">
+                                                <h6 class="m-0 font-weight-bold text-primary">時代力量</h6>
+                                                
+                                            </div>
+                                            <!-- Card Body -->
+                                            <div class="card-body">
+                                                
+                                                <div class="chart-pie pt-4 pb-2">
+                                                    <canvas id="power"></canvas>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-5">
+                                        <div class="card shadow mb-4">
+                                            <!-- Card Header - Dropdown -->
+                                            <div
+                                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                                <img src="https://upload.wikimedia.org/wikipedia/zh/6/66/Flag_of_People_First_Party.svg" width="50px" height="50px">
+                                                <h6 class="m-0 font-weight-bold text-primary">親民黨</h6>
+                                                
+                                            </div>
+                                            <!-- Card Body -->
+                                            <div class="card-body">
+                                                
+                                                <div class="chart-pie pt-4 pb-2">
+                                                    <canvas id="pfp"></canvas>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-5">
+                                        <div class="card shadow mb-4">
+                                            <!-- Card Header - Dropdown -->
+                                            <div
+                                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Daijish%C5%8D_in_brown.svg" width="50px" height="50px">
+                                                <h6 class="m-0 font-weight-bold text-primary">台灣基進黨</h6>
+                                                
+                                            </div>
+                                            <!-- Card Body -->
+                                            <div class="card-body">
+                                                
+                                                <div class="chart-pie pt-4 pb-2">
+                                                    <canvas id="state"></canvas>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-5">
+                                        <div class="card shadow mb-4">
+                                            <!-- Card Header - Dropdown -->
+                                            <div
+                                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Emblem_of_Taiwan_People%27s_Party_2019.svg" width="50px" height="50px">
+                                                <h6 class="m-0 font-weight-bold text-primary">民眾黨</h6>
+                                                
+                                            </div>
+                                            <!-- Card Body -->
+                                            <div class="card-body">
+                                                
+                                                <div class="chart-pie pt-4 pb-2">
+                                                    <canvas id="tpp"></canvas>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                       
+                     </div>
 
                     <div class="card card-collapsable">
                         <a class="card-header" href="#collapseCardExample2" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample"><i class="far fa-paper-plane"></i> 發文數
@@ -477,206 +669,6 @@
                         </div>
                     </div>
 
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    </div>
-
-                    <div class="card card-collapsable">
-                        <a class="card-header" href="#collapseCardExample4" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample"><i class="fas fa-exclamation-circle"></i> 政黨代表顏色
-                            <div class="card-collapsable-arrow">
-                            </div>
-                        </a>
-                        <div class="collapse" id="collapseCardExample4">
-                            <div class="card-body">
-                                <div class='row'>
-                                    <div class="col-md-2 mb-2">
-                                        <div class="card bg-dpp text-white shadow">
-                                            <div class="card-body">
-                                                民進黨
-                                                <div class="text-white-50 small">#1B9431</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2 mb-2">
-                                        <div class="card bg-kmt text-white shadow">
-                                            <div class="card-body">
-                                                國民黨
-                                                <div class="text-white-50 small">#000095</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2 mb-2">
-                                        <div class="card bg-pfp text-white shadow">
-                                            <div class="card-body">
-                                                親民黨
-                                                <div class="text-white-50 small">#FF6310</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2 mb-2">
-                                        <div class="card bg-power text-white shadow">
-                                            <div class="card-body">
-                                                時代力量
-                                                <div class="text-white-50 small">#F9BE01</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2 mb-2">
-                                        <div class="card bg-state text-white shadow">
-                                            <div class="card-body">
-                                                台灣基進黨
-                                                <div class="text-white-50 small">#A73F24</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2 mb-2">
-                                        <div class="card bg-tpp text-white shadow">
-                                            <div class="card-body">
-                                                民眾黨
-                                                <div class="text-white-50 small">#28C8C8</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    </div>
-
-                    <div class="card card-collapsable">
-                        <a class="card-header" href="#collapseCardExample5" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample"><i class="fas fa-palette"></i> 圖像顏色分佈佔比
-                            <div class="card-collapsable-arrow">
-                            </div>
-                        </a>
-                        <div class="collapse" id="collapseCardExample5">
-                            <div class="card-body">
-                                <div class="row">
-
-                                    <!-- Pie Chart -->
-                                    <div class="col-xl-4 col-lg-5">
-                                        <div class="card shadow mb-4">
-                                            <!-- Card Header - Dropdown -->
-                                            <div
-                                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                                <img src="https://upload.wikimedia.org/wikipedia/zh/c/c1/Emblem_of_Democratic_Progressive_Party_%28new%29.svg" width="50px" height="50px">
-                                                <h6 class="m-0 font-weight-bold text-primary">民進黨</h6>
-                                                
-                                            </div>
-                                            <!-- Card Body -->
-                                            <div class="card-body">
-                                                
-                                                <div class="chart-pie pt-4 pb-2">
-                                                    <canvas id="dpp"></canvas>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xl-4 col-lg-5">
-                                        <div class="card shadow mb-4">
-                                            <!-- Card Header - Dropdown -->
-                                            <div
-                                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Emblem_of_the_Kuomintang.svg" width="50px" height="50px">
-                                                <h6 class="m-0 font-weight-bold text-primary">國民黨</h6>
-                                                
-                                            </div>
-                                            <!-- Card Body -->
-                                            <div class="card-body">
-                                                
-                                                <div class="chart-pie pt-4 pb-2">
-                                                    <canvas id="kmt"></canvas>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xl-4 col-lg-5">
-                                        <div class="card shadow mb-4">
-                                            <!-- Card Header - Dropdown -->
-                                            <div
-                                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                                <img src="http://images.uncyc.org/zh-tw/8/8f/Semi_NewPowerParty_logo_01.gif" width="50px" height="50px">
-                                                <h6 class="m-0 font-weight-bold text-primary">時代力量</h6>
-                                                
-                                            </div>
-                                            <!-- Card Body -->
-                                            <div class="card-body">
-                                                
-                                                <div class="chart-pie pt-4 pb-2">
-                                                    <canvas id="power"></canvas>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xl-4 col-lg-5">
-                                        <div class="card shadow mb-4">
-                                            <!-- Card Header - Dropdown -->
-                                            <div
-                                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                                <img src="https://upload.wikimedia.org/wikipedia/zh/6/66/Flag_of_People_First_Party.svg" width="50px" height="50px">
-                                                <h6 class="m-0 font-weight-bold text-primary">親民黨</h6>
-                                                
-                                            </div>
-                                            <!-- Card Body -->
-                                            <div class="card-body">
-                                                
-                                                <div class="chart-pie pt-4 pb-2">
-                                                    <canvas id="pfp"></canvas>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xl-4 col-lg-5">
-                                        <div class="card shadow mb-4">
-                                            <!-- Card Header - Dropdown -->
-                                            <div
-                                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Daijish%C5%8D_in_brown.svg" width="50px" height="50px">
-                                                <h6 class="m-0 font-weight-bold text-primary">台灣基進黨</h6>
-                                                
-                                            </div>
-                                            <!-- Card Body -->
-                                            <div class="card-body">
-                                                
-                                                <div class="chart-pie pt-4 pb-2">
-                                                    <canvas id="state"></canvas>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xl-4 col-lg-5">
-                                        <div class="card shadow mb-4">
-                                            <!-- Card Header - Dropdown -->
-                                            <div
-                                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Emblem_of_Taiwan_People%27s_Party_2019.svg" width="50px" height="50px">
-                                                <h6 class="m-0 font-weight-bold text-primary">民眾黨</h6>
-                                                
-                                            </div>
-                                            <!-- Card Body -->
-                                            <div class="card-body">
-                                                
-                                                <div class="chart-pie pt-4 pb-2">
-                                                    <canvas id="tpp"></canvas>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         
@@ -1120,7 +1112,7 @@
 
                     <div class="card card-collapsable">
                         
-                        <a class="card-header" href="#collapseCardExampleAge" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample" onclick="imgReset()"><i class="fas fa-clipboard-list"></i> 人物年齡
+                        <a class="card-header" href="#collapseCardExampleAge" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample"><i class="fas fa-clipboard-list"></i> 人物年齡
                             <div class="card-collapsable-arrow"></div>
                         </a>
                         <div class="collapse" id="collapseCardExampleAge">
@@ -1577,10 +1569,11 @@
                     </div>
 
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <br>
                     </div>
 
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800"><i class="fas fa-user" style="color: #51cf66;"></i> <strong>立委統計</strong></h1>
+                        <h1 class="h3 mb-0 text-gray-800"><i class="fas fa-user"></i> <strong>立委統計</strong></h1>
                     </div>
                     
 
@@ -1661,7 +1654,7 @@
 
                     <div class="card card-collapsable">
                         
-                        <a class="card-header" href="#collapseCardExample7" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample" onclick="imgReset()"><i class="fas fa-palette"></i> 立委代表顏色
+                        <a class="card-header" href="#collapseCardExample7" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample" onclick="imgReset();"><i class="fas fa-palette"></i> 立委代表顏色
                             <div class="card-collapsable-arrow"></div>
                         </a>
                         <div class="collapse" id="collapseCardExample7">
