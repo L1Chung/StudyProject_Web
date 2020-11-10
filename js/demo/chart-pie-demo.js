@@ -3,40 +3,45 @@ Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,Bli
 Chart.defaults.global.defaultFontColor = '#858796';
 
 // Pie Chart Example
+try {
 
-var ctx = document.getElementById("dpp");
-var myPieChart = new Chart(ctx, {
-  type: 'doughnut',
-  data: {
-    labels: ["Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent"],
-    datasets: [{
-      data: [9.54, 19.26, 8.14, 6.62, 3.53, 8.64, 17.63, 3.53, 0.1, 0.52, 2.06, 1.67, 18.77],
-      backgroundColor:['#FF0000','#FF8000','#FFFF00','#80FF00','#00FF00','#00FF80','#00FFFF','#0080FF','#0000FF','#7F00FF','#FF00FF','#FF007F','#808080'],
-      hoverBackgroundColor: [],
-      hoverBorderColor: "rgba(234, 236, 244, 1)",
-    }],
-  },
-  options: {
-    maintainAspectRatio: false,
-    tooltips: {
-      backgroundColor: "rgb(255,255,255)",
-      bodyFontColor: "#858796",
-      borderColor: '#dddfeb',
-      borderWidth: 1,
-      xPadding: 15,
-      yPadding: 15,
-      displayColors: false,
-      caretPadding: 10,
+  var ctx = document.getElementById("dpp");
+  var myPieChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ["Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent"],
+      datasets: [{
+        data: [9.54, 19.26, 8.14, 6.62, 3.53, 8.64, 17.63, 3.53, 0.1, 0.52, 2.06, 1.67, 18.77],
+        backgroundColor:['#FF0000','#FF8000','#FFFF00','#80FF00','#00FF00','#00FF80','#00FFFF','#0080FF','#0000FF','#7F00FF','#FF00FF','#FF007F','#808080'],
+        hoverBackgroundColor: [],
+        hoverBorderColor: "rgba(234, 236, 244, 1)",
+      }],
     },
-    legend: {
-      display: false
+    options: {
+      maintainAspectRatio: false,
+      tooltips: {
+        backgroundColor: "rgb(255,255,255)",
+        bodyFontColor: "#858796",
+        borderColor: '#dddfeb',
+        borderWidth: 1,
+        xPadding: 15,
+        yPadding: 15,
+        displayColors: false,
+        caretPadding: 10,
+      },
+      legend: {
+        display: false
+      },
+      cutoutPercentage: 80,
     },
-    cutoutPercentage: 85,
-  },
-});
+  });
+  
+} catch (error) {
+  
+}
 
-////
-var ctx = document.getElementById("kmt");
+try {
+  var ctx = document.getElementById("kmt");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
@@ -63,12 +68,17 @@ var myPieChart = new Chart(ctx, {
     legend: {
       display: false
     },
-    cutoutPercentage: 85,
+    cutoutPercentage: 80,
   },
 });
+} catch (error) {
+  
+}
 
-////
-var ctx = document.getElementById("power");
+
+
+try {
+  var ctx = document.getElementById("power");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
@@ -95,11 +105,16 @@ var myPieChart = new Chart(ctx, {
     legend: {
       display: false
     },
-    cutoutPercentage: 85,
+    cutoutPercentage: 80,
   },
 });
+} catch (error) {
+  
+}
 
-////
+
+try {
+  ////
 var ctx = document.getElementById("pfp");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
@@ -127,12 +142,15 @@ var myPieChart = new Chart(ctx, {
     legend: {
       display: false
     },
-    cutoutPercentage: 85,
+    cutoutPercentage: 80,
   },
 });
+} catch (error) {
+  
+}
 
-////
-var ctx = document.getElementById("state");
+try {
+  var ctx = document.getElementById("state");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
@@ -159,11 +177,16 @@ var myPieChart = new Chart(ctx, {
     legend: {
       display: false
     },
-    cutoutPercentage: 85,
+    cutoutPercentage: 80,
   },
 });
+} catch (error) {
+  
+}
 
-////
+
+try {
+  ////
 var ctx = document.getElementById("tpp");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
@@ -191,13 +214,16 @@ var myPieChart = new Chart(ctx, {
     legend: {
       display: false
     },
-    cutoutPercentage: 85,
+    cutoutPercentage: 80,
   },
 });
+} catch (error) {
+  
+}
 
 
-
-var ctx = document.getElementById("dpp-ig");
+try {
+  var ctx = document.getElementById("dpp-ig");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
@@ -224,11 +250,16 @@ var myPieChart = new Chart(ctx, {
     legend: {
       display: false
     },
-    cutoutPercentage: 85,
+    cutoutPercentage: 80,
   },
 });
+} catch (error) {
+  
+}
 
-////
+
+try {
+  ////
 var ctx = document.getElementById("dpp-fb");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
@@ -256,11 +287,15 @@ var myPieChart = new Chart(ctx, {
     legend: {
       display: false
     },
-    cutoutPercentage: 85,
+    cutoutPercentage: 80,
   },
 });
+} catch (error) {
+  
+}
 
-// Pie Chart Example
+try {
+  // Pie Chart Example
 var ctx = document.getElementById("kmt-ig");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
@@ -288,11 +323,15 @@ var myPieChart = new Chart(ctx, {
     legend: {
       display: false
     },
-    cutoutPercentage: 85,
+    cutoutPercentage: 80,
   },
 });
+} catch (error) {
+  
+}
 
-////
+try {
+  ////
 var ctx = document.getElementById("kmt-fb");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
@@ -320,11 +359,15 @@ var myPieChart = new Chart(ctx, {
     legend: {
       display: false
     },
-    cutoutPercentage: 85,
+    cutoutPercentage: 80,
   },
 });
+} catch (error) {
+  
+}
 
-// Pie Chart Example
+try {
+  // Pie Chart Example
 var ctx = document.getElementById("power-ig");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
@@ -352,12 +395,15 @@ var myPieChart = new Chart(ctx, {
     legend: {
       display: false
     },
-    cutoutPercentage: 85,
+    cutoutPercentage: 80,
   },
 });
+} catch (error) {
+  
+}
 
-////
-var ctx = document.getElementById("power-fb");
+try {
+  var ctx = document.getElementById("power-fb");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
@@ -384,11 +430,16 @@ var myPieChart = new Chart(ctx, {
     legend: {
       display: false
     },
-    cutoutPercentage: 85,
+    cutoutPercentage: 80,
   },
 });
+} catch (error) {
+  
+}
 
-// Pie Chart Example
+
+try {
+  // Pie Chart Example
 var ctx = document.getElementById("pfp-ig");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
@@ -416,11 +467,15 @@ var myPieChart = new Chart(ctx, {
     legend: {
       display: false
     },
-    cutoutPercentage: 85,
+    cutoutPercentage: 80,
   },
 });
+} catch (error) {
+  
+}
 
-////
+try {
+  ////
 var ctx = document.getElementById("pfp-fb");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
@@ -448,11 +503,15 @@ var myPieChart = new Chart(ctx, {
     legend: {
       display: false
     },
-    cutoutPercentage: 85,
+    cutoutPercentage: 80,
   },
 });
+} catch (error) {
+  
+}
 
-// Pie Chart Example
+try {
+  // Pie Chart Example
 var ctx = document.getElementById("state-ig");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
@@ -480,12 +539,16 @@ var myPieChart = new Chart(ctx, {
     legend: {
       display: false
     },
-    cutoutPercentage: 85,
+    cutoutPercentage: 80,
   },
 });
+} catch (error) {
+  
+}
 
-////
-var ctx = document.getElementById("state-fb");
+
+try {
+  var ctx = document.getElementById("state-fb");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
@@ -512,11 +575,15 @@ var myPieChart = new Chart(ctx, {
     legend: {
       display: false
     },
-    cutoutPercentage: 85,
+    cutoutPercentage: 80,
   },
 });
+} catch (error) {
+  
+}
 
-// Pie Chart Example
+try {
+  // Pie Chart Example
 var ctx = document.getElementById("tpp-ig");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
@@ -544,12 +611,16 @@ var myPieChart = new Chart(ctx, {
     legend: {
       display: false
     },
-    cutoutPercentage: 85,
+    cutoutPercentage: 80,
   },
 });
+} catch (error) {
+  
+}
 
-////
-var ctx = document.getElementById("tpp-fb");
+
+try {
+  var ctx = document.getElementById("tpp-fb");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
@@ -576,6 +647,10 @@ var myPieChart = new Chart(ctx, {
     legend: {
       display: false
     },
-    cutoutPercentage: 85,
+    cutoutPercentage: 80,
   },
 });
+} catch (error) {
+  
+}
+
