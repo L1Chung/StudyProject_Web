@@ -33,7 +33,7 @@ function LoadBar_count(){
     type: 'bar',
     data: {
       
-      labels: ['民進黨','國民黨','親民黨','時代力量','台灣基進黨','民眾黨'],
+      labels: ['民進黨','國民黨','親民黨','時代力量','台灣基進','民眾黨'],
       datasets: [{
         label: "互動數",
         backgroundColor: [
@@ -93,11 +93,13 @@ function LoadBar_count(){
             drawBorder: false
           },
           ticks: {
+            fontSize: 15,
             maxTicksLimit: 10
           }
         }],
         yAxes: [{
           ticks: {
+            fontSize: 15,
             maxTicksLimit: 8,
             padding: 10,
             // Include a dollar sign in the ticks
@@ -119,6 +121,7 @@ function LoadBar_count(){
         titleMarginBottom: 10,
         titleFontColor: '#6e707e',
         titleFontSize: 14,
+        bodyFontSize: 15,
         borderColor: '#dddfeb',
         borderWidth: 1,
         xPadding: 15,
@@ -143,7 +146,7 @@ function LoadBar_count(){
     type: 'bar',
     data: {
       
-      labels: ['民進黨','國民黨','親民黨','時代力量','台灣基進黨','民眾黨'],
+      labels: ['民進黨','國民黨','親民黨','時代力量','台灣基進','民眾黨'],
       datasets: [{
         label: "數量",
         backgroundColor: [
@@ -182,11 +185,13 @@ function LoadBar_count(){
             drawBorder: false
           },
           ticks: {
+            fontSize: 15,
             maxTicksLimit: 10
           }
         }],
         yAxes: [{
           ticks: {
+            fontSize: 15,
             maxTicksLimit: 8,
             padding: 10,
             // Include a dollar sign in the ticks
@@ -208,6 +213,7 @@ function LoadBar_count(){
         titleMarginBottom: 10,
         titleFontColor: '#6e707e',
         titleFontSize: 14,
+        bodyFontSize: 15,
         borderColor: '#dddfeb',
         borderWidth: 1,
         xPadding: 15,
@@ -298,7 +304,7 @@ borderColor: '#F9BE01'
 };
 
 var dataState_fb = {
-  label: "台灣基進黨",
+  label: "台灣基進",
   data: [168, 86, 36, 56, 122, 74, 50, 56],
   lineTension: 0.3,
   backgroundColor: "rgba(167, 63, 36, 0.05)",
@@ -359,11 +365,13 @@ var myLineChart = new Chart(ctx, {
           drawBorder: false
         },
         ticks: {
+          fontSize: 15,
           maxTicksLimit: 7
         }
       }],
       yAxes: [{
         ticks: {
+          fontSize: 15,
           maxTicksLimit: 5,
           padding: 10,
           // Include a dollar sign in the ticks
@@ -389,6 +397,7 @@ var myLineChart = new Chart(ctx, {
       titleMarginBottom: 10,
       titleFontColor: '#6e707e',
       titleFontSize: 14,
+      bodyFontSize: 15,
       borderColor: '#dddfeb',
       borderWidth: 1,
       xPadding: 15,
@@ -477,7 +486,7 @@ borderColor: '#F9BE01'
 };
 
 var dataState_ig = {
-  label: "台灣基進黨",
+  label: "台灣基進",
   data: [9, 0, 1, 7, 35, 14, 12, 3],
   lineTension: 0.3,
   backgroundColor: "rgba(167, 63, 36, 0.05)",
@@ -538,11 +547,13 @@ var myLineChart = new Chart(ctx, {
           drawBorder: false
         },
         ticks: {
+          fontSize: 15,
           maxTicksLimit: 7
         }
       }],
       yAxes: [{
         ticks: {
+          fontSize: 15,
           maxTicksLimit: 5,
           padding: 10,
           // Include a dollar sign in the ticks
@@ -568,6 +579,7 @@ var myLineChart = new Chart(ctx, {
       titleMarginBottom: 10,
       titleFontColor: '#6e707e',
       titleFontSize: 14,
+      bodyFontSize: 15,
       borderColor: '#dddfeb',
       borderWidth: 1,
       xPadding: 15,
@@ -594,7 +606,7 @@ var myLineChart = new Chart(ctx, {
   type: 'bar',
   data: {
     
-    labels: ['陳柏惟\n台灣基進', '許淑華\n中國國民黨', '高嘉瑜\n民主進步黨', '王定宇\n民主進步黨', '蔣萬安\n中國國民黨', '洪孟楷\n中國國民黨', '趙天麟\n民主進步黨', '江啟臣\n中國國民黨', '陳亭妃\n民主進步黨', '賴士葆\n中國國民黨'],
+    labels: [['陳柏惟','台灣基進'], ['許淑華','國民黨'], ['高嘉瑜','民進黨'], ['王定宇','民進黨'], ['蔣萬安','國民黨'], ['洪孟楷','國民黨'], ['趙天麟','民進黨'], ['江啟臣','國民黨'], ['陳亭妃','民進黨'], ['賴士葆','國民黨']],
     datasets: [{
       label: "互動數",
       backgroundColor: [
@@ -670,12 +682,14 @@ var myLineChart = new Chart(ctx, {
           drawBorder: false
         },
         ticks: {
+          fontSize: 15,
           maxTicksLimit: 10
         }
       }],
       yAxes: [{
         ticks: {
-          maxTicksLimit: 8,
+          fontSize: 15,
+          maxTicksLimit: 10,
           padding: 10,
           // Include a dollar sign in the ticks
           callback: function(value, index, values) {
@@ -696,6 +710,7 @@ var myLineChart = new Chart(ctx, {
       titleMarginBottom: 10,
       titleFontColor: '#6e707e',
       titleFontSize: 14,
+      bodyFontSize: 15,
       borderColor: '#dddfeb',
       borderWidth: 1,
       xPadding: 15,
