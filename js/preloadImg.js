@@ -4,6 +4,17 @@ function preload(arrayOfImages) {
         // Alternatively you could use:
         // (new Image()).src = this;
     });
+    
+}
+
+function change(img2){
+    
+    document.getElementById('image').style.opacity = 0;
+    document.getElementById('image').src = img2;
+    $('#image').fadeTo(1500,1, function(){
+        document.getElementById("imgReload").style = "background-image: url('"+img2+"'); background-size: cover;";
+    });
+    
 }
 
 // Usage:
