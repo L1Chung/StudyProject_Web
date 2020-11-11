@@ -657,3 +657,70 @@ var myPieChart = new Chart(ctx, {
   
 }
 
+function loadPie_person(){
+  var ctx = document.getElementById("dpp-person");
+  var myPieChart = new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    labels: ["Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent"],
+    datasets: [{
+      data: [14.75, 6.56, 8.2, 19.67, 0.0, 4.92, 21.31, 3.28, 1.64, 0.0, 3.28, 6.56, 9.84],
+      backgroundColor:['#FF0000','#FF8000','#FFFF00','#80FF00','#00FF00','#00FF80','#00FFFF','#0080FF','#0000FF','#7F00FF','#FF00FF','#FF007F','#808080'],
+      hoverBackgroundColor: [],
+      hoverBorderColor: "rgba(234, 236, 244, 1)",
+    }],
+  },
+  options: {
+    maintainAspectRatio: false,
+    tooltips: {
+      backgroundColor: "rgb(255,255,255)",
+      bodyFontColor: "#858796",
+      borderColor: '#dddfeb',
+      borderWidth: 1,bodyFontSize: 15,
+      xPadding: 15,
+      yPadding: 15,
+      displayColors: false,
+      caretPadding: 10,
+    },
+    legend: {
+      display: false
+    },
+    cutoutPercentage: 80,
+  },
+});
+
+
+
+  var ctx = document.getElementById("kmt-person");
+var myPieChart = new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    labels: ["Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent","Percent"],
+    datasets: [{
+      data: [21.62, 2.7, 0.0, 0.0, 0.0, 2.7, 10.81, 48.65, 0.0, 2.7, 0.0, 5.41, 5.41],
+      backgroundColor:['#FF0000','#FF8000','#FFFF00','#80FF00','#00FF00','#00FF80','#00FFFF','#0080FF','#0000FF','#7F00FF','#FF00FF','#FF007F','#808080'],
+      hoverBackgroundColor: [],
+      hoverBorderColor: "rgba(234, 236, 244, 1)",
+    }],
+  },
+  options: {
+    maintainAspectRatio: false,
+    tooltips: {
+      backgroundColor: "rgb(255,255,255)",
+      bodyFontColor: "#858796",
+      borderColor: '#dddfeb',
+      borderWidth: 1,bodyFontSize: 15,
+      xPadding: 15,
+      yPadding: 15,
+      displayColors: false,
+      caretPadding: 10,
+    },
+    legend: {
+      display: false
+    },
+    cutoutPercentage: 80,
+  },
+});
+}
+
+
