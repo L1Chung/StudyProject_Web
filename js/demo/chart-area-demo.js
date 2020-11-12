@@ -634,7 +634,7 @@ var myLineChart = new Chart(ctx, {
         'rgba(0, 0, 149, 1)',
       ],
       order:1,
-      data: [12046.36, 7225.83, 5783.474, 3144.153, 2952.519, 2951.228, 2792.274, 2733.31, 2594.587, 2385.195]
+      data: [12.05, 7.23, 5.78, 3.14, 2.95, 2.95, 2.79, 2.73, 2.59, 2.39]
     },{
       label: "讚數",
       backgroundColor: [
@@ -662,7 +662,7 @@ var myLineChart = new Chart(ctx, {
         'rgba(0, 0, 149, 1)',
       ],
       order:2,
-      data: [10856.738, 6987.626, 5321.67, 2816.998, 2855.832, 2830.725, 2713.253, 2640.301, 2497.234, 2152.142]
+      data: [10.86, 6.99, 5.32, 2.82, 2.86, 2.83, 2.71, 2.64, 2.5, 2.15]
     }],
   },
   options: {
@@ -693,7 +693,7 @@ var myLineChart = new Chart(ctx, {
           padding: 10,
           // Include a dollar sign in the ticks
           callback: function(value, index, values) {
-            return number_format(value) + 'K';
+            return number_format(value) + 'M';
           }
         },
         gridLines: {
@@ -722,7 +722,8 @@ var myLineChart = new Chart(ctx, {
       callbacks: {
         label: function(tooltipItem, chart) {
           var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-          return datasetLabel + ':' + number_format(tooltipItem.yLabel)+'K';
+          var Dataset = chart.datasets[tooltipItem.datasetIndex].data;
+          return datasetLabel + ':' + tooltipItem.yLabel +'M';
         }
       }
     }
